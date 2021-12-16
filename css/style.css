@@ -30,8 +30,19 @@ ul {
 .site-nav-list .link:focus {
   color: #2196f3;
 }
+.site-nav-list .link.current {
+  color: #2196f3;
+}
 
 /* Contacts list */
+
+.contacts-list .link {
+  color: #757575;
+}
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: #2196f3;
+}
 
 /* цвет основного текста #757575*/
 /* вторичный цвет текста #212121 */
