@@ -2,6 +2,14 @@ body {
   color: #757575;
   font-family: 'Roboto', sans-serif;
 }
+
+:root {
+  --main-text-color: #757575;
+  --second-text-color: #212121;
+  --accent-color: #2196f3;
+  --white: #ffffff;
+}
+
 .list {
   list-style: none;
 }
@@ -12,7 +20,7 @@ body {
 
 .logo {
   text-decoration: none;
-  color: #2196f3;
+  color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -24,13 +32,13 @@ body {
 }
 
 .logo-light {
-  color: #ffffff;
+  color: var(--white);
 }
 
 /* Site nav */
 
 .site-nav-list .link {
-  color: #212121;
+  color: var(--second-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -38,16 +46,16 @@ body {
 }
 .site-nav-list .link:hover,
 .site-nav-list .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .site-nav-list .link.current {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Contacts list */
 
 .contacts-list .link {
-  color: #757575;
+  color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14px;
@@ -55,7 +63,7 @@ body {
 }
 .contacts-list .link:hover,
 .contacts-list .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* Hero */
 .hero {
@@ -63,7 +71,7 @@ body {
 }
 
 .hero-title {
-  color: #ffffff;
+  color: var(--white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -72,8 +80,8 @@ body {
   text-transform: uppercase;
 }
 .hero-button {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--white);
+  background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -87,7 +95,7 @@ body {
 /* Features */
 
 .features-list-title {
-  color: #212121;
+  color: var(--second-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -95,7 +103,7 @@ body {
   text-transform: uppercase;
 }
 .features-list-text {
-  color: #757575;
+  color: var(--main-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -104,7 +112,7 @@ body {
 /* About-us */
 .about-us-title,
 .team-title {
-  color: #212121;
+  color: var(--second-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -118,7 +126,7 @@ body {
   background-color: #f5f4fa;
 }
 .team-item-title {
-  color: #212121;
+  color: var(--second-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -127,11 +135,29 @@ body {
 }
 
 .team-item-text {
-  color: #757575;
+  color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+/* Portfolio */
+
+.filter-button {
+  color: var(--second-text-color);
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--white);
+  background-color: var(--accent-color);
 }
 
 /* Footer */
@@ -140,7 +166,7 @@ body {
 }
 
 .footer-address {
-  color: #ffffff;
+  color: var(--white);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -157,9 +183,3 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
-/* цвет основного текста #757575*/
-/* вторичный цвет текста #212121 */
-/* белый #ffffff */
-/* акцент цвет #2196F3 */
-/* вторичный цвет фона #2F303A  */
