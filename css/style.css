@@ -16,6 +16,18 @@ body {
 .link {
   text-decoration: none;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 /* Header */
 
 .logo {
@@ -90,6 +102,12 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
 }
 
 /* Features */
@@ -147,17 +165,40 @@ body {
 .filter-button {
   color: var(--second-text-color);
   background-color: #f5f4fa;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .filter-button:hover,
 .filter-button:focus {
   color: var(--white);
   background-color: var(--accent-color);
+}
+
+.btn-current {
+  color: var(--white);
+  background-color: var(--accent-color);
+}
+
+.card-set-item-title {
+  color: var(--second-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.card-set-item-text {
+  color: var(--main-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
 
 /* Footer */
